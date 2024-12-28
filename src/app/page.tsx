@@ -8,8 +8,8 @@ export default function Home() {
     <div className="grid gap-20">
       <Hero/>
       <About/>
-      {/* <Blog/> */}
       <Testimonals/>
+      <Blog/>
     </div>
   )
 }

@@ -1,7 +1,14 @@
 import Image from 'next/image'
 import React from 'react'
 
-const TestimonalsComp = (props:any) => {
+interface TestimonyProps {
+  desc: string;
+  image: string;
+  name: string;
+  passion: string;
+}
+
+const TestimonalsComp = (props: TestimonyProps) => {
   return (
       <div className="p-4 md:w-1/2 w-full">
         <div className="h-full bg-gray-200 p-8 rounded">
