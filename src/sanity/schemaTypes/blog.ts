@@ -1,3 +1,5 @@
+import { defineArrayMember } from "sanity";
+
 export default {
     name: 'blog',
     type: 'document',
@@ -36,5 +38,11 @@ export default {
                                    .slice(0, 200)
             }
         },
+        {
+            title: 'Content',
+            name: 'content',
+            type: 'array',
+            of: [defineArrayMember({type: 'block'})]
+        }
     ]
 }

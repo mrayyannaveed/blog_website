@@ -6,7 +6,7 @@ import imageUrlBuilder from '@sanity/image-url'
 export const client = createClient({
   projectId,
   dataset,
-  apiVersion,
+  // apiVersion,
   useCdn: true, // Set to false if statically generating pages, using ISR or tag-based revalidation
 })
 

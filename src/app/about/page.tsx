@@ -5,7 +5,7 @@ import { client } from '@/sanity/lib/client';
 const About = async () => {
   
     const blog = await client.fetch(`*[_type == "about"]`);
-    console.log(blog);
+    // console.log(blog);
   return (
     <section className="text-gray-600 body-font">
   <div className="container px-5 py-12 mx-auto">
